@@ -3,9 +3,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function GitHubLink() {
     return(
-        <div className='align-center order-5 justify-center'> 
+        <div className='p-3'> 
             <a href="https://github.com/crazyoldbuffalo">
-                <FontAwesomeIcon className="text-[#c3e88d] justify-center" icon={faGithub}/>
+                <FontAwesomeIcon className="text-[#c3e88d]" icon={faGithub}/>
             </a>
         </div>
     )

@@ -2,18 +2,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import GitHubLink from "./githublink";
 import ProfileImage from "./profileimg";
 import LinkedInLink from './linkedinlink';
+import SiteName from './sitename';
 
 export default function Heading() {
     return (
-        <div className="flex flex-row w-full bg-[#34324a] rounded-b-lg p-2 drop-shadow-lg items-center">
-            <div className="left">
+        <div className="flex w-full bg-[#34324a] rounded-b-lg p-4 drop-shadow-lg items-center">
+            <div className="">
                 <ProfileImage/>
             </div>
-
-            <div className="right-0">
+            <div>
+                <SiteName/>
+            </div>
+            <div className="">
                 <GitHubLink/>
             </div>
-            <div>
+            <div className=''>
                 <LinkedInLink/>
             </div>
         </div>
