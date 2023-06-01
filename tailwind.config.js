@@ -6,10 +6,18 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'background': '#292D3E',
+
+    },
+
     extend: {
       fontFamily: {
-        'header' : ['Inconsolata', 'monospace']
+        sans: ['var(--font-sans)','Roboto', '-apple-system', 'ui-sans-serif'],
+        serif: ['var(--font-serif)', 'ui-serif', 'Georgia'],
+        mono: ['var(--font-mono)', 'monospace', 'Consolas'],
       },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

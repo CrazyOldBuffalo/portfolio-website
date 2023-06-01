@@ -6,7 +6,7 @@ import SiteName from './sitename';
 
 export default function Heading() {
     return (
-        <div className="flex w-full bg-[#34324a] rounded-b-lg p-4 drop-shadow-lg items-center">
+        <div className="flex w-full bg-background rounded-b-2xl p-4 drop-shadow-lg items-center">
             <div className="">
                 <ProfileImage/>
             </div>
