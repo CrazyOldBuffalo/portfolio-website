@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     colors: {
       'background': '#292D3E',
-
+      'accent' : '#AB47BC',
+      'variables' : '#EEFFFF',
+      'strings' : '#C3E88D',
+      'parameters' : '#F78C6C',
+      'border': '#A6ACCD'
     },
 
     extend: {
