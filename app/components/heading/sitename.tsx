@@ -1,7 +1,7 @@
 export default function SiteName() {
     return(
-        <div>
-            <h1 className="font-mono"> Tom Boberek</h1>
+        <div className="align-center">
+            <h1 className="font-mono text-3xl uppercase text-variables"> Tom Boberek</h1>
         </div>
     )
 }
