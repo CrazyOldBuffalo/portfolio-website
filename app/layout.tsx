@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Heading className='sticky top-0 z-50'/>
+        <Heading/>
         {children}
       </body>
     </html>
