@@ -19,7 +19,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sans)','Roboto', '-apple-system', 'ui-sans-serif'],
         serif: ['var(--font-serif)', 'ui-serif', 'Georgia'],
-        mono: ['var(--font-mono)', 'monospace', 'Consolas'],
+        mono: ['monospace', 'Consolas'],
       },
 
       backgroundImage: {

@@ -3,7 +3,7 @@ import profileImg from '../../../public/profileImg.png'
 
 export default function ProfileImage() {
     return (
-        <div className='p-2'>
+        <div className='p-1'>
             <Image className='w-10 h-10 rounded-full ring-2 ring-offset-4 ring-accent ring-offset-[#34324a] blur-[0.5px] hover:blur-0' src={profileImg} alt='Profile Image of website creator'></Image>
         </div>
     )

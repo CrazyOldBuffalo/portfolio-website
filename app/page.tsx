@@ -1,9 +1,10 @@
+import Hero from "./components/Hero/hero";
 
 
 export default function Home() {
   return (
     <main className="bg-background">
-      <h1> Test </h1>
+      <Hero/>
     </main>
   )
 }
