@@ -1,0 +1,12 @@
+---
+import { Icon } from "astro-icon/components";
+
+const {title} = Astro.props;
+---
+
+<div class="flex items-center space-x-2">
+    <Icon name="material-symbols:folder" class="text-4xl text-gray-500 text-shadow-lg"/>
+    <h2 class="text-4xl md:text-4xl font-bold leading-tight text-shadow-md">
+       {title}
+    </h2>
+</div>

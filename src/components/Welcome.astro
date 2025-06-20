@@ -1,17 +1,24 @@
 ---
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
+import Education from './education/Education.astro';
+import PersonalProfile from './personalprofile/PersonalProfile.astro';
 ---
 
 <div>
-	<div>
-		<section id="test">
-			<p> Test Item here happening right now</p>
-		</section>
-	</div>
-
+	<section id="personalprofile">
+		<div>
+			<PersonalProfile/>
+		</div>
+	</section>
 </div>
-
+<div>
+	<section>
+		<div>
+			<Education/>
+		</div>
+	</section>
+</div>
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>

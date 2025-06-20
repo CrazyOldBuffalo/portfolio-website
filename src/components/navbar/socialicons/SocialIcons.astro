@@ -1,5 +1,18 @@
 ---
-import { Icon } from 'astro-icon/components'
+import SocialIcon from './socialicon/SocialIcon.astro';
+import Socials from './socialicon/socials';
+
+const socialicons: Socials[] = [
+    new Socials("octicon:mark-github-16", "https://github.com/CrazyOldBuffalo"),
+    new Socials("mdi:linkedin", "https://www.linkedin.com/in/tomboberek/"),
+    new Socials("mdi:instagram", "https://www.instagram.com/crazyoldbuffalo/"),
+    new Socials("mdi:steam", "https://steamcommunity.com/profiles/76561198093234095/")
+]
+
 ---
 
-<Icon name={"octicon:mark-github-16"}/>
+<div class="flex flex-row">
+    {socialicons.map(icon => (
+        <SocialIcon iconName={icon.Iconname} iconURL={icon.Iconlink}/>
+    ))}
+</div>
