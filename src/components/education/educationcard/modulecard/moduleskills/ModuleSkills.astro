@@ -1,7 +1,22 @@
 ---
+import ModuleSkill from './moduleskill/ModuleSkill.astro';
 
-interface Skills {
-    
+
+interface Skill {
+    iconname: string;
+    colour: string;
 }
 
+interface Props {
+    skills: Skill[];
+}
+
+const { skills } = Astro.props;
+
 ---
+
+<div>
+    { skills.map(skill => (
+        <ModuleSkill skill={skill.iconname} colour={skill.colour}/>
+    )) }
+</div>
