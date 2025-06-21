@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+    skill: string;
+    colour: string;
+}
+
+const {skill, colour} = Astro.props
+
+---
+
+<div>
+    <Icon name={skill} class=`${colour}`/>
+</div>

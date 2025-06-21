@@ -1,0 +1,21 @@
+---
+import ModuleTitle from './moduletitle/ModuleTitle.astro';
+
+
+interface Props {
+    moduletitle: string;
+    moduledescription: string;
+    modulegrade: string;
+    modulemarks: number;
+    moduleskills: string[];
+}
+
+const { moduletitle, moduledescription, modulegrade, modulemarks, moduleskills } = Astro.props;
+
+---
+
+<section>
+    <div>
+        <ModuleTitle title={moduletitle}/>
+    </div>
+</section>
