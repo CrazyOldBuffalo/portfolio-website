@@ -2,7 +2,10 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import Education from './education/Education.astro';
+import ModuleCard from './education/educationcard/modulecard/ModuleCard.astro';
 import PersonalProfile from './personalprofile/PersonalProfile.astro';
+
+var skills = ['test', 'test1']
 ---
 
 <div>
@@ -16,10 +19,11 @@ import PersonalProfile from './personalprofile/PersonalProfile.astro';
 	<section>
 		<div>
 			<Education/>
+			<ModuleCard moduletitle="test" moduledescription='test' modulegrade='1st' modulemarks={10} moduleskills={skills}/>
 		</div>
 	</section>
 </div>
-<div id="container">
+<div id="container">t
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
 		<section id="hero">
