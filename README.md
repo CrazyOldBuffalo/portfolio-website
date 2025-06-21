@@ -1,4 +1,10 @@
-# Astro Starter Kit: Basics
+# Portfolio Website
+
+This is a portfolio website built with [Astro](https://astro.build/).
+
+> TODO: Add Content Here
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
