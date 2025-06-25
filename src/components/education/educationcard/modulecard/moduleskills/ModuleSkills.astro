@@ -1,11 +1,6 @@
 ---
+import type {Skill} from '../../../../../types/Skill';
 import ModuleSkill from './moduleskill/ModuleSkill.astro';
-
-
-interface Skill {
-    iconname: string;
-    colour: string;
-}
 
 interface Props {
     skills: Skill[];

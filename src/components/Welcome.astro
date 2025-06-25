@@ -4,8 +4,15 @@ import background from '../assets/background.svg';
 import Education from './education/Education.astro';
 import ModuleCard from './education/educationcard/modulecard/ModuleCard.astro';
 import PersonalProfile from './personalprofile/PersonalProfile.astro';
+import type { Skill } from '../types/Skill';
 
-var skills = ['test', 'test1']
+const skills: Skill[] = [
+	{
+		iconname: "mdi:steam",
+		colour: "green"
+
+	}
+];
 ---
 
 <div>
@@ -19,7 +26,7 @@ var skills = ['test', 'test1']
 	<section>
 		<div>
 			<Education/>
-			<ModuleCard moduletitle="test" moduledescription='test' modulegrade='1st' modulemarks={10} moduleskills={skills}/>
+			<ModuleCard moduletitle="test" moduledescription='test' modulegrade={1} modulemark={10} moduletotalmarks={100} moduleskills={skills}/>
 		</div>
 	</section>
 </div>

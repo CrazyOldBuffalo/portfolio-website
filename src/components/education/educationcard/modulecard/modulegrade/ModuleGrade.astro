@@ -1,3 +1,19 @@
 ---
 
+interface Props {
+    grade: number;
+}
+
+const { grade } = Astro.props
 ---
+
+<div>
+    <h4>
+        {
+            grade === 1 ? grade+"st" :
+            grade === 2 ? grade+"nd" :
+            grade === 3 ? grade+"rd" :
+            grade+"th"
+        }
+    </h4>
+</div>
