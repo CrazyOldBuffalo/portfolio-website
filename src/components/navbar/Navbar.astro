@@ -1,12 +1,22 @@
 ---
 import Profileicon from "./profileicon/profileicon.astro";
+import Sitename from "./sitename/sitename.astro";
+import SocialIcons from "./socialicons/SocialIcons.astro";
 
 
 
 ---
 
 <div class="sticky top-0 z-50 transition delay-75 duration-100 ease-in-out hover:bg-slate-600 backdrop-blur-md bg-transparent">
-    <div class="flex">
-        <Profileicon/>    
+    <div class="flex flex-row justify-between items-center w-full">
+        <div>
+            <Profileicon/> 
+        </div>
+        <div>
+            <Sitename />
+        </div>
+        <div>
+            <SocialIcons/>
+        </div>
     </div>
 </div>

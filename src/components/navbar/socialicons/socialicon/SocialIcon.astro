@@ -1,0 +1,15 @@
+---
+import { Icon } from "astro-icon/components";
+const {iconName, iconURL} = Astro.props;
+
+const aria = 'link to ' + iconURL
+---
+
+<div class="p-2 m-1">
+    <a href={iconURL} target="_blank" rel="noopener noreferrer" aria-label={aria} class="p-2 m-auto">
+        <div class="p-1 border-2 border-slate-400 rounded-md">
+            <Icon name={iconName} class="text-3xl text-slate-400" /> 
+        </div>
+    </a>
+</div>
+

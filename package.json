@@ -9,8 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@iconify-json/material-symbols": "^1.2.27",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/ph": "^1.2.2",
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.3",
+    "astro-icon": "^1.1.5",
+    "firebase": "^11.9.1",
     "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "@iconify-json/octicon": "^1.2.6"
   }
 }

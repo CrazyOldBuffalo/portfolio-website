@@ -1,0 +1,17 @@
+---
+import type {Skill} from '../../../../../types/Skill';
+import ModuleSkill from './moduleskill/ModuleSkill.astro';
+
+interface Props {
+    skills: Skill[];
+}
+
+const { skills } = Astro.props;
+
+---
+
+<div>
+    { skills.map(skill => (
+        <ModuleSkill skill={skill.iconname} colour={skill.colour}/>
+    )) }
+</div>

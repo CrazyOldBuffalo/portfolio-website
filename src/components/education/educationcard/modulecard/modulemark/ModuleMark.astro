@@ -1,0 +1,16 @@
+---
+
+interface Props {
+    marks: number;
+    totalmarks: number;
+}
+
+
+const { marks, totalmarks } = Astro.props;
+
+const percent = (marks / totalmarks) * 100;
+---
+
+<div>
+    <h4> Overall Marks: {percent}%  </h4>
+</div>

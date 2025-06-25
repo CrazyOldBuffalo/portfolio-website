@@ -1,0 +1,46 @@
+---
+import type {Skill} from "../../../../types/Skill";
+import ModuleDescription from "./moduledescription/ModuleDescription.astro";
+import ModuleGrade from "./modulegrade/ModuleGrade.astro";
+import ModuleMark from "./modulemark/ModuleMark.astro";
+import ModuleSkills from "./moduleskills/ModuleSkills.astro";
+import ModuleTitle from "./moduletitle/ModuleTitle.astro";
+
+interface Props {
+  moduletitle: string;
+  moduledescription: string;
+  modulegrade: number;
+  modulemark: number;
+  moduletotalmarks: number;
+  moduleskills: Skill[];
+}
+
+const {
+  moduletitle,
+  moduledescription,
+  modulegrade,
+  modulemark,
+  moduletotalmarks,
+  moduleskills,
+} = Astro.props;
+---
+
+<section>
+  <div>
+    <div>
+      <ModuleTitle title={moduletitle} />
+    </div>
+    <div>
+      <ModuleDescription description={moduledescription} />
+    </div>
+    <div>
+      <ModuleMark marks={modulemark} totalmarks={moduletotalmarks} />
+    </div>
+    <div>
+      <ModuleGrade grade={modulegrade} />
+    </div>
+    <div>
+      <ModuleSkills skills={moduleskills} />
+    </div>
+  </div>
+</section>
