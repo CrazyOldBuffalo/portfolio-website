@@ -16,7 +16,8 @@
     "astro": "^5.9.3",
     "astro-icon": "^1.1.5",
     "firebase": "^11.9.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@iconify-json/octicon": "^1.2.6"
