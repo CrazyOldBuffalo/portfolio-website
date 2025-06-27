@@ -37,6 +37,13 @@ jobs:
 
       - name: Wait for server to be ready
         run: npx wait-on http://localhost:4321
+      
+      - name: Run unit tests with coverage
+        run: npm run coverage
+
+      - name: Check coverage threshold
+        run: |
+          npx vitest run --coverage.enabled true --coverage.reporter=text --coverage.statements=80 --coverage.branches=80 --coverage.functions=80 --coverage.lines=80
 
       - name: Run Cypress tests with coverage
         uses: cypress-io/github-action@v6
