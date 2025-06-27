@@ -41,7 +41,6 @@ jobs:
       - name: Run Cypress tests with coverage
         uses: cypress-io/github-action@v6
         with:
-          start: false
           wait-on: http://localhost:4321
           wait-on-timeout: 60 # seconds
           command: npm run cy:coverage # or your custom script for coverage
